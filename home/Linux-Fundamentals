@@ -1,0 +1,22 @@
+#!/bin/bash 
+
+#########################
+Author - Shashank
+date - 24-11-2025
+This script outputs the Nodehealth
+Version - V1 
+#########################
+
+set -x
+set -e
+set -o pipefail
+
+df -h
+echo "This gives disk size"
+
+free -g
+echo "This gives the memory of the server"
+
+nproc
+echo "This gives No of CPU's"
+
